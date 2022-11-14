@@ -3,7 +3,7 @@ import { Button } from 'components/Button/Button';
 // Импортируем объект значений фильтра
 import { statusFilters } from '../../redux/constants';
 // Импортируем генератор экшена
-import { setStatusFilter } from '../../redux/actions';
+import { setStatusFilter } from '../../redux/filtersSlice';
 import { getStatusFilter } from '../../redux/selectors';
 import css from './StatusFilter.module.css';
 

@@ -1,8 +1,9 @@
+import { useDispatch } from 'react-redux';
 import { Button } from 'components/Button/Button';
 import css from './TaskForm.module.css';
-import { useDispatch } from 'react-redux';
+
 // Импортируем генератор экшена
-import { addTask } from '../../redux/actions';
+import { addTask } from '../../redux/tasksSlice';
 
 export const TaskForm = () => {
   // Получаем ссылку на функцию отправки экшенов
