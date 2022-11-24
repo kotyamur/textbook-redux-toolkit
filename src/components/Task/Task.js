@@ -1,9 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { MdClose } from 'react-icons/md';
+import { deleteTask, toggleCompleted } from 'redux/operations';
 import css from './Task.module.css';
-
-// Импортируем генератор экшена
-import { deleteTask, toggleCompleted } from '../../redux/tasksSlice';
 
 export const Task = ({ task }) => {
   // Получаем ссылку на функцию отправки экшенов
@@ -13,7 +11,7 @@ export const Task = ({ task }) => {
   const handleDelete = () => dispatch(deleteTask(task.id));
   // Вызываем генератор экшена и передаём идентификатор задачи
   // Отправляем результат - экшен переключения статуса задачи
-  const handleToggle = () => dispatch(toggleCompleted(task.id));
+  const handleToggle = () => dispatch(toggleCompleted(task));
 
   return (
     <div className={css.wrapper}>
