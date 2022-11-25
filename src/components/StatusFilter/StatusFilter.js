@@ -4,14 +4,14 @@ import { Button } from 'components/Button/Button';
 import { statusFilters } from '../../redux/constants';
 // Импортируем генератор экшена
 import { setStatusFilter } from '../../redux/filtersSlice';
-import { getStatusFilter } from '../../redux/selectors';
+import { selectStatusFilter } from '../../redux/selectors';
 import css from './StatusFilter.module.css';
 
 export const StatusFilter = () => {
   // Получаем ссылку на функцию отправки экшенов
   const dispatch = useDispatch();
   // Получаем значение фильтра из состояния Redux
-  const filter = useSelector(getStatusFilter);
+  const filter = useSelector(selectStatusFilter);
 
   // Вызываем генератор экшена и передаём значение фильтра
   // Отправляем результат - экшен изменения фильтра
