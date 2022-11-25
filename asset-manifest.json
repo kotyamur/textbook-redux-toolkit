@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/textbook-redux-toolkit/static/css/main.5763847e.css",
-    "main.js": "/textbook-redux-toolkit/static/js/main.effd3caf.js",
+    "main.js": "/textbook-redux-toolkit/static/js/main.44a05a21.js",
     "index.html": "/textbook-redux-toolkit/index.html",
     "main.5763847e.css.map": "/textbook-redux-toolkit/static/css/main.5763847e.css.map",
-    "main.effd3caf.js.map": "/textbook-redux-toolkit/static/js/main.effd3caf.js.map"
+    "main.44a05a21.js.map": "/textbook-redux-toolkit/static/js/main.44a05a21.js.map"
   },
   "entrypoints": [
     "static/css/main.5763847e.css",
-    "static/js/main.effd3caf.js"
+    "static/js/main.44a05a21.js"
   ]
 }
